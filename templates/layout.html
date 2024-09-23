@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo" style="display: flex; align-items: center;">
+            <div class="logo-container" style="margin-right: 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Vd8_KzOocLYzkA03EZ6DT8Fwklfnm4hvWg&s" alt="Logo" class="logo" style="width: 150px; height: 50px;">
+            </div>
+            <h1 style="margin: 0; font-size: 24px; color: #8E24AA;">FemFit</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('profile') }}">Create Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 Well-AI. All rights reserved.</p>
+    </footer> -->
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+<header>
+<div class="logo" style="display: flex; align-items: center;">
+<div class="logo-container" style="margin-right: 10px;">
+<img src="{{ url_for('static', filename='images/logo.webp') }}" alt="FemFit Logo" style="width: 50px; height: 50px;">
+</div>
+<h1>FemFit</h1>
+</div>
+<nav>
+<ul>
+<li><a href="{{ url_for('index') }}">Home</a></li>
+<li><a href="{{ url_for('about') }}">About</a></li>
+<li><a href="{{ url_for('profile') }}">Create Profile</a></li>
+</ul>
+</nav>
+</header>
+ 
+    <main>
+        
+<section class="section menstrual">
+<img src="{{ url_for('static', filename='images/menstrual.jpg') }}" alt="Menstrual Phase">
+<div class="section-content">
+<h2>Menstrual Phase</h2>
+<p>During the Menstrual phase, it's important to take care of your body with gentle, restorative exercises. Light workouts like yoga, walking, and stretching can help reduce cramping and improve circulation.</p>
+<p><strong>Recommended workout:</strong> Yoga, walking, light stretching.</p>
+<p><strong>Diet tips:</strong> Focus on iron-rich foods like spinach, beans, and lean meats to replenish the body.</p>
+</div>
+</section>
+ 
+        <section class="section follicular">
+<img src="{{ url_for('static', filename='images/follicular.jpg') }}" alt="Follicular Phase">
+<div class="section-content">
+<h2>Follicular Phase</h2>
+<p>The Follicular phase is when your energy levels start rising. This is a great time to engage in moderate-intensity exercises such as cardio or strength training to take advantage of increased stamina.</p>
+<p><strong>Recommended workout:</strong> Moderate cardio, strength training.</p>
+<p><strong>Diet tips:</strong> Fuel up with lean protein, healthy fats, and complex carbohydrates like quinoa and whole grains.</p>
+</div>
+</section>
+ 
+        <section class="section ovulation">
+<img src="{{ url_for('static', filename='images/ovulation.jpg') }}" alt="Ovulation Phase">
+<div class="section-content">
+<h2>Ovulation Phase</h2>
+<p>Ovulation is the peak of your energy and strength. High-intensity workouts and strength training are ideal during this phase, helping you maximize performance and muscle gain.</p>
+<p><strong>Recommended workout:</strong> High-intensity interval training (HIIT), heavy strength training.</p>
+<p><strong>Diet tips:</strong> Emphasize protein-rich foods and more complex carbs for sustained energy.</p>
+</div>
+</section>
+ 
+        <section class="section luteal">
+<img src="{{ url_for('static', filename='images/luteal.jpg') }}" alt="Luteal Phase">
+<div class="section-content">
+<h2>Luteal Phase</h2>
+<p>As your body prepares for the next cycle, it's important to reduce workout intensity. Focus on moderate exercises like stretching and light strength training, while managing energy levels and mood.</p>
+<p><strong>Recommended workout:</strong> Low-impact strength training, yoga, stretching.</p>
+<p><strong>Diet tips:</strong> Consume magnesium-rich foods and avoid sugar to balance energy and mood swings.</p>
+</div>
+</section>
+</main>
+ 
+    <footer>
+<p>&copy; 2024 Well-AI. All rights reserved.</p>
+</footer>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo" style="display: flex; align-items: center;">
+            <div class="logo-container" style="margin-right: 10px;">
+                <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="FemFit Logo" style="width: 50px; height: 50px;">
+            </div>
+            <h1 style="margin: 0;">FemFit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('profile') }}">Create Profile</a></li>
+            </ul>
+            <a href="{{ url_for('profile') }}" class="btn-get-started">Get Started</a>
+        </nav>
+    </header>-->
+
+    <main>
+        <section class="section menstrual">
+            <img src="https://assets.vogue.in/photos/601291e222284e1c9b494ad7/2:3/w_2560%2Cc_limit/5%2520female%2520fitness%2520myths%2C%2520debunked%2520by%2520the%2520pros.jpg" alt="Menstrual Phase">
+            <div class="section-content">
+                <h2>Menstrual Phase</h2>
+                <p>During the Menstrual phase, it's important to take care of your body with gentle, restorative exercises. Light workouts like yoga, walking, and stretching can help reduce cramping and improve circulation.</p>
+                <p><strong>Recommended workout:</strong> Yoga, walking, light stretching.</p>
+                <p><strong>Diet tips:</strong> Focus on iron-rich foods like spinach, beans, and lean meats to replenish the body.</p>
+            </div>
+        </section>
+
+        <!-- Follicular Phase Section -->
+        <section class="section follicular">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/shot-of-a-young-woman-working-out-with-weights-in-a-royalty-free-image-1705679985.jpg" alt="Follicular Phase">
+            <div class="section-content">
+                <h2>Follicular Phase</h2>
+                <p>The Follicular phase is when your energy levels start rising. This is a great time to engage in moderate-intensity exercises such as cardio or strength training to take advantage of increased stamina.</p>
+                <p><strong>Recommended workout:</strong> Moderate cardio, strength training.</p>
+                <p><strong>Diet tips:</strong> Fuel up with lean protein, healthy fats, and complex carbohydrates like quinoa and whole grains.</p>
+            </div>
+        </section>
+
+        <!-- Ovulation Phase Section -->
+        <section class="section ovulation">
+            <img src="https://images.ctfassets.net/0k812o62ndtw/2mP3CxyZ64kNA45GhgViqU/9fcc2e06830873245203e39f104c4f19/SWEAT_ExerciseCycle_HERO__1__enfbc2f871ab38e6fc4f9775dbf7c48ad9.jpg" alt="Ovulation Phase">
+            <div class="section-content">
+                <h2>Ovulation Phase</h2>
+                <p>Ovulation is the peak of your energy and strength. High-intensity workouts and strength training are ideal during this phase, helping you maximize performance and muscle gain.</p>
+                <p><strong>Recommended workout:</strong> High-intensity interval training (HIIT), heavy strength training.</p>
+                <p><strong>Diet tips:</strong> Emphasize protein-rich foods and more complex carbs for sustained energy.</p>
+            </div>
+        </section>
+
+        <!-- Luteal Phase Section -->
+        <section class="section luteal">
+            <img src="https://entail-assets.com/insidetracker/Optimizing_Training_Around_Your_Menstrual_Cycle_2-1702590024471.jpg" alt="Luteal Phase">
+            <div class="section-content">
+                <h2>Luteal Phase</h2>
+                <p>As your body prepares for the next cycle, it's important to reduce workout intensity. Focus on moderate exercises like stretching and light strength training, while managing energy levels and mood.</p>
+                <p><strong>Recommended workout:</strong> Low-impact strength training, yoga, stretching.</p>
+                <p><strong>Diet tips:</strong> Consume magnesium-rich foods and avoid sugar to balance energy and mood swings.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Well-AI. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

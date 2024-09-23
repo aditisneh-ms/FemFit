@@ -1,0 +1,31 @@
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="user-profile">
+    <h2>{{ user.name }}'s Profile</h2>
+    <!-- <img src="" alt="User Image" class="profile-image"> -->
+    <div class="profile-info">
+        <p><strong>Age:</strong> {{ user.age }}</p>
+        <p><strong>Gender:</strong> {{ user.gender }}</p>
+        {% if user.gender.lower() == 'female' %}
+            <p><strong>Menstrual Start Date:</strong> {{ user.menstrual_start_date }}</p>
+            <p><strong>Cycle Length:</strong> {{ user.cycle_length }} days</p>
+        {% endif %}
+    </div>
+
+    <h2>Recommended Plan</h2>
+    <div class="recommendation">
+        <h3>{{ recommended_plan.phase }}</h3>
+        <img src="https://www.corefitness.com.sg/wp-content/uploads/2023/08/woman-exercising-menstrual-cycle-female.jpg" alt="Workout Plan Image" class="recommendation-image">
+        <p><strong>Recommended Workout:</strong> {{ recommended_plan.workout }}</p>
+        <p><strong>Recommended Diet:</strong> {{ recommended_plan.diet }}</p>
+        
+        <h4>General Suggestions:</h4>
+        <pre>{{ recommended_plan.general_suggestions }}</pre>
+    </div>
+    
+    <a href="{{ url_for('index') }}" class="button">Back to Home</a>
+</div>
+{% endblock %}

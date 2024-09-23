@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <img src="https://img.freepik.com/premium-photo/beautiful-fit-women-working-out-gym-together_522218-1532.jpg" alt="Wellness Image" class="main-image">
+    <!-- <h2>Welcome to FemFit</h2>
+    <p>We provide personalized workout and diet plans for women based on their menstrual cycles, empowering them to stay healthy and fit throughout the month.</p>
+     -->
+    
+    <a href="{{ url_for('profile') }}" class="button">Get Started</a>
+    
+</div>
+
+<style>
+    .home {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-image {
+        width: 100%;
+        max-width: 800px; /* Adjust max-width as needed */
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .logo-container {
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 150px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 10px; /* Optional: add border-radius for styling */
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+</style>
+{% endblock %}

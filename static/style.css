@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* main {
+    padding: 20px;
+} */
+
+h2 {
+    color: #333;
+}
+
+.home, .about, .profile-form, .user-profile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+button, .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+.profile-info, .recommendation {
+    margin: 20px 0;
+}
+
+.profile-info p, .recommendation p {
+    margin: 5px 0;
+}
+
+.main-image, .form-image, .profile-image, .recommendation-image, .about-image {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCE4EC; /* Light pastel pink background */
+    color: #5D3F6A; /* Deep lavender text color */
+}
+
+header {
+    background-color: #D1C4E9; /* Lavender background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-weight: 600;
+    color: #b461cba9; /* Deep pastel purple */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #86399bc8; /* Deep pastel purple */
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5D3F6A; /* Deep lavender on hover */
+}
+
+/* Main Content */
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+    /* padding: 20px;
+} */ */
+
+/* main .content {
+    text-align: center;
+    max-width: 600px;
+    background-color: #FFFDE7; /* Light pastel yellow */
+    /* padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */ */
+
+/* Get Started Button */
+.button {
+    display: inline-block;
+    background-color: #F48FB1; /* Soft pink button color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #F06292; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #D1C4E9; /* Lavender footer background */
+    color: #5D3F6A; /* Deep lavender text color */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6b317b;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Get Started Button */
+.btn-get-started {
+    background-color: #f8d3d3; /* Light pastel pink */
+    color: #8E24AA;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #8E24AA;
+}
+
+.btn-get-started:hover {
+    background-color: #8E24AA;
+    color: #fff;
+}
+
+/* main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Adjust image sizes */
+.section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-content {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.section-content h2 {
+    font-size: 24px;
+    color: #8E24AA;
+}
+
+.section-content p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Individual section colors */
+.menstrual {
+    background-color: #f8d3d3; /* Light pastel pink */
+}
+
+.follicular {
+    background-color: #e3d8ff; /* Light pastel lavender */
+}
+
+.ovulation {
+    background-color: #d3f8d3; /* Light pastel green */
+}
+
+.luteal {
+    background-color: #ffe3d3; /* Light pastel peach */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+ 
+header {
+    background-color: #8E24AA;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+ 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+ 
+nav ul li {
+    display: inline;
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+/* main {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen is narrow */
+    justify-content: space-between; /* Space out the sections */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+} */
+ 
+.section {
+    flex: 0 1 48%; /* Allow two sections per row */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin for better alignment */
+    border-radius: 10px;
+    padding: 20px;
+}
+ 
+/* Adjust image sizes */
+.section img {
+    width: 150px; /* Adjust image width for horizontal layout */
+    height: 150px; /* Adjust image height for horizontal layout */
+}
+ 
+.section-content {
+    flex: 1;
+    margin-left: 30px;
+}
+ 
+.section-content h2 {
+    font-size: 24px;
+    color: #8E24AA;
+}
+ 
+.section-content p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+ 
+/* Individual section colors */
+.menstrual {
+    background-color: #f8d3d3; /* Light pastel pink */
+}
+ 
+.follicular {
+    background-color: #e3d8ff; /* Light pastel lavender */
+}
+ 
+.ovulation {
+    background-color: #d3f8d3; /* Light pastel green */
+}
+ 
+.luteal {
+    background-color: #ffe3d3; /* Light pastel peach */
+}
+ 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ 
+footer p {
+    margin: 0;
+}
